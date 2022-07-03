@@ -13,12 +13,6 @@ h2, h3 {
     color: #00a2c6;
 }
 
-nav a {
-    font-size: 18px;
-    font-weight: 400;
-    text-decoration: none;
-}
-
 nav a:hover {
     font-weight: bold;
 }
@@ -70,6 +64,8 @@ nav li {
 nav {
     background-color: #00a2c6;
     padding: 5px;
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -100,4 +96,8 @@ aside {
         width: 100%;
         padding: 0;
     }
+}
+
+header {
+    display: inline;
 }

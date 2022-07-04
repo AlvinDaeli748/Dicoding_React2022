@@ -28,6 +28,10 @@ body {
     cursor: pointer;
 }
 
+.button:hover {
+    font-weight: bold;
+}
+
 .double {
     flex-basis: 50%;
 }

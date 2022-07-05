@@ -64,3 +64,31 @@ function inverseNumber() {
     }
     calculator.displayNumber = calculator.displayNumber * -1;
 }
+
+function handleOperator(operator) {
+    if (!calculator.waitingForSecondNumber) {
+        calculator.operator = operator;
+        calculator.waitingForSecondNumber = true;
+        calculator.firstNumber = calculator.displayNumber;
+
+        calculator.displayNumber = '0';
+    } else {
+        alert('operator sudah ditetapkan');
+    }
+}
+
+function performCalculation() {
+    if (calculator.firstNumber == null || calculator.operator == null) {
+        alert('Anda belum menetapkan operator');
+        return;
+    }
+
+    let result = 0;
+    if (calculator.operator === '+') {
+        result = parseInt(calculator.firstNumber) + parseInt(calculator.displayNumber);
+    } else {
+        result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
+    }
+
+    calculator.displayNumber = result;
+}

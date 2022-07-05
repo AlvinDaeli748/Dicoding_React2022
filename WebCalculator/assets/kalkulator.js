@@ -30,6 +30,12 @@ for (const button of buttons) {
     button.addEventListener('click', function (event) {
         const target = event.target;
 
+        if (target.classList.contains('clear')) {
+            clearCalculator();
+            updateDisplay();
+            return;  //untuk memberhentikan kode (sehingga tidak semua tereksekusi)
+        }
+
         inputDigit(target.innerText);
         updateDisplay();
     });

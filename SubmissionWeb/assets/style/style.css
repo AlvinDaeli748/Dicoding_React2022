@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -34,10 +35,36 @@ body {
     padding: 0;
 }
 
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 80%;
+}
+
+aside {
+    float: right;
+    width: 20%;
+}
+
+.profile img {
+    width: 200px;
+}
+
 footer {
     background-color: #3F72AF;
     color: #F9F7F7;
     padding: 25px;
     text-align: center;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1000px) {
+    #content, aside {
+        width: 100%;
+        padding: 0;
+    }
 }

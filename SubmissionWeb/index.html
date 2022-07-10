@@ -13,12 +13,15 @@
                 <p>Ibu kota Provinsi Sumatera Utara yang merupakan kota terbesar di luar pulau Jawa.</p>
             </div>
             <nav>
-                <ul>
-                    <li><a href="#sejarah">Sejarah</a></li>
-                    <li><a href="#">Wisata</a></li>
-                    <!-- disini dibuat dropdown -->
-                    <!-- wisata kuliner & wisata alam -->
-                </ul>
+                <a href="#sejarah">Sejarah</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Wisata</button>
+                    <div class="dropdown-content">
+                        <a href="#">Istana Maimun</a>
+                        <a href="#">Tjong A Fie</a>
+                        <a href="#">Kuliner</a>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -32,6 +35,30 @@
                     </figure>
                     <p>Asal mula kata Medan yaitu dari bahasa Tamil <i>Maidhan</i> atau <i>Maidhanam</i> yang dimana memiliki arti tanah lapang atau tempat yang luas, lalu teradopsi ke Bahasa Melayu.</p>
                     <p>Menurut buku <i>The History of Medan</i> yang ditulis oleh Tengku Luckman Sinar (1991), tertulis bahwa menurut <q>Hikayat Aceh</q>, Medan sebelumnya merupakan pelabuhan yang telah ada pada tahun 1950 dan sempat hancur karena serangan Sultan Aceh Alauddin Saidi Mukammil terhadap Raja Haru yang berkuasa pada saat itu. Serangan yang sama juga dilakukan oleh Sultan Iskandar Muda pada tahun 1613 ke Kesultanan Deli. Pada akhir abad ke-16, nama Haru diubah menjadi Ghuri dan pada awal abad ke-17 diubah lagi menjadi Deli. Pertempuran terus berlangsung antara Haru dengan Aceh yang mengakibatkan penduduk Haru jauh berkurang. Sumber: https://id.wikipedia.org/wiki/Kota_Medan</p>
+                </article>
+
+                <article id="wisata" class="card">
+                    <h2>Wisata</h2>
+                    <img>
+                    <p>Terdapat banyak wisata yang dapat dinikmati di Medan. Seperti mengunjungi bangunan bersejarah maupun wisata kuliner.</p>
+
+                    <section id="maimun">
+                        <h3>Istana Maimun</h3>
+                        <img>
+                        <p>Deskripsi Istana Maimun</p>
+                    </section>
+
+                    <section id="tjongAFie">
+                        <h3>Rumah Tjong A Fie</h3>
+                        <img>
+                        <p>Deskripsi</p>
+                    </section>
+
+                    <section id="kuliner">
+                        <h3>Kuliner</h3>
+                        <img>
+                        <p>Deskripsi</p>
+                    </section>
                 </article>
             </div>
 
@@ -55,5 +82,7 @@
         <footer>
             <p>Submission Dasar Pemrograman Web &copy; 2022, Alvin Daeli</p>
         </footer>
+
+        <script src="assets/script/script.js"></script>
     </body>
 </html>
